@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--    Scripts, estilos y dependencias -->
+    <title>Bienvenido ❤️</title>
+    <!-- SEO (search engine optimization) -->
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="viewport"
+    />
+    <meta property="og:title" content="Guillermo Quintana" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="/" />
+    <meta
+      name="description"
+      content="portfolio cv java c# go js html css js node guillermo quintana SEO svelte."
+    />
+    <meta name="theme-color" content="#5540af" />
+    <meta property="og:site_name" content="Guillermo Quintana" />
+    <meta property="og:image" content="/assets/img/perfil.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@tailwindmade" />
+    <link rel="canonical" href="https://github.com/guille1093" />
+    <link rel="icon" type="image/png" href="/assets/img/perfil.png" />
+    <link
+      crossorigin="crossorigin"
+      href="https://fonts.gstatic.com"
+      rel="preconnect"
+    />
+    <link
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="preload"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      defer
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      defer
+      crossorigin="anonymous"
+      href="/assets/styles/main.min.css"
+      media="screen"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+  </head>
+
+  <body
+    :class="{ 'overflow-hidden max-h-screen': mobileMenu }"
+    class="relative"
+    x-data="{ mobileMenu: false }"
+  >
+    <div id="main" class="relative">
+      <div
+        x-data="{
+    triggerNavItem(id) {
+        $scroll(id)
+    },
+    triggerMobileNavItem(id) {
+        mobileMenu = false;
+        this.triggerNavItem(id)
+    }
+}"
+      >
+        <div class="absolute top-0 z-50 w-full py-3 sm:py-5">
+          <div class="container flex items-center justify-between">
+            <!--  ##############################################################################################
+                                    INICIO BARRA DE NAVEGACIÓN NORMAL
+      ###############################################################################################-->
+
+            <div class="hidden lg:block">
+              <ul class="flex items-center">
+                <li class="group pl-6">
+                  <span
+                    @click="triggerNavItem('#about')"
+                    class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+                    >Acerca de mi</span
+                  >
+                  <span
+                    class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+                  ></span>
+                </li>
+
+                <li class="group pl-6">
+                  <span
+                    @click="triggerNavItem('#about')"
+                    class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+                    >Idiomas</span
+                  >
+
+                  <span
+                    class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+                  ></span>
+                </li>
+
+                <li class="group pl-6">
+                  <span
+                    @click="triggerNavItem('#services')"
+                    class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+                    >Servicios</span
+                  >
+
+                  <span
+                    class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+                  ></span>
+                </li>
+
+                <li class="group pl-6">
+                  <span
+                    @click="triggerNavItem('#portfolio')"
+                    class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+                    >Tecnologias</span
+                  >
+
+                  <span
+                    class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+                  ></span>
+                </li>
+
+                <li class="group pl-6">
+                  <span
+                    @click="triggerNavItem('#proyects')"
+                    class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+                    >Proyectos</span
+                  >
+
+                  <span
+                    class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+                  ></span>
+                </li>
+
+                <li class="group pl-6">
+                  <span
+                    @click="triggerNavItem('#contact')"
+                    class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+                    >Contacto</span
+                  >
+
+                  <span
+                    class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+                  ></span>
+                </li>
+
+                <li class="group pl-6">
+                  <span
+                    @click="triggerNavItem('#cv')"
+                    class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+                    >CV</span
+                  >
+
+                  <span
+                    class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+                  ></span>
+                </li>
+              </ul>
+            </div>
+            <div class="block lg:hidden">
+              <button @click="mobileMenu = true" aria-label="abrir">
+                <i class="bx bx-menu text-4xl text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="pointer-events-none fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 opacity-0 transition-opacity lg:hidden"
+          :class="{ 'opacity-100 pointer-events-auto': mobileMenu }"
+        >
+          <div
+            class="absolute right-0 min-h-screen w-2/3 bg-primary py-4 px-8 shadow md:w-1/3"
+          >
+            <button
+              class="absolute top-0 right-0 mt-4 mr-4"
+              aria-label="cerrar"
+              @click="mobileMenu = false"
+            >
+              <img
+                src="/assets/img/icon-close.svg"
+                class="h-10 w-auto"
+                alt="close"
+              />
+            </button>
+
+            <!--  ##############################################################################################
+                                        INICIO BARRA DE NAVEGACIÓN COLAPSADA
+          ###############################################################################################-->
+            <ul class="mt-8 flex flex-col">
+              <li class="py-2">
+                <span
+                  @click="triggerMobileNavItem('#about')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+                  >Acerca de mi</span
+                >
+              </li>
+
+              <li class="py-2">
+                <span
+                  @click="triggerMobileNavItem('#about')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+                  >Idiomas</span
+                >
+              </li>
+
+              <li class="py-2">
+                <span
+                  @click="triggerMobileNavItem('#services')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+                  >Servicios</span
+                >
+              </li>
+
+              <li class="py-2">
+                <span
+                  @click="triggerMobileNavItem('#portfolio')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+                  >Tecnologias</span
+                >
+              </li>
+
+              <li class="py-2">
+                <span
+                  @click="triggerMobileNavItem('#proyects')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+                  >Proyectos</span
+                >
+              </li>
+
+              <li class="py-2">
+                <span
+                  @click="triggerMobileNavItem('#contact')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+                  >Contacto</span
+                >
+              </li>
+
+              <li class="py-2">
+                <span
+                  @click="triggerMobileNavItem('#cv')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+                  >CV</span
+                >
+              </li>
+            </ul>
+
+            <!--  ##############################################################################################
+                                    FIN BARRA DE NAVEGACIÓN COLAPSADA
+      ###############################################################################################-->
+          </div>
+        </div>
+        <div>
+          <!--        <div class="relative bg-cover bg-center bg-no-repeat py-8" style="background-image: url(/assets/img/bg-hero.jpg)">-->
+          <div class="relative bg-cover bg-center bg-no-repeat py-8">
+            <div
+              class="absolute inset-0 z-20 bg-gradient-to-r from-hero-gradient-from to-hero-gradient-to bg-cover bg-center bg-no-repeat"
+            >
+              <video id="background-video" autoplay loop muted>
+                <source
+                  src="/assets/vid/bgvid.mp4"
+                  class="relative"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+
+            <div
+              class="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48"
+            >
+              <div
+                class="flex flex-col items-center justify-center lg:flex-row"
+              >
+                <div class="rounded-full border-8 border-primary shadow-xl">
+                  <img
+                    src="/assets/img/perfil.png"
+                    class="h-48 rounded-full sm:h-56"
+                    alt="author"
+                  />
+                </div>
+                <div class="pt-8 sm:mt-10 sm:pt-20 lg:pl-8 lg:pt-0">
+                  <h1
+                    class="text-center font-header text-4xl text-white sm:text-left sm:text-5xl md:text-6xl"
+                  >
+                    Hola, soy Guillermo Quintana
+                  </h1>
+                  <p class="text-center text-white sm:text-left">
+                    Desarrollador full stack | Analista
+                  </p>
+                  <div
+                    class="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start"
+                  >
+                    <div
+                      class="flex items-center justify-center pl-0 sm:justify-start md:pl-1"
+                    >
+                      <p class="font-body text-lg uppercase text-white">
+                        Conectemos
+                      </p>
+                      <div class="hidden sm:block">
+                        <i class="bx bx-chevron-right text-3xl text-yellow"></i>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0"
+                    >
+                      <a
+                        href="https://www.facebook.com/guille1093/"
+                        alt="facebook"
+                      >
+                        <i
+                          class="bx bxl-facebook-square bx-tada-hover text-2xl text-white hover:text-yellow"
+                        ></i>
+                      </a>
+                      <a
+                        href="https://twitter.com/Guiller83846795"
+                        alt="twitter"
+                        class="pl-4"
+                      >
+                        <i
+                          class="bx bxl-twitter bx-tada-hover text-2xl text-white hover:text-yellow"
+                        ></i>
+                      </a>
+                      <a
+                        href="https://github.com/guille1093"
+                        class="pl-4"
+                        alt="github"
+                      >
+                        <i
+                          class="bx bxl-github bx-tada-hover text-2xl text-white hover:text-yellow"
+                        ></i>
+                      </a>
+                      <a
+                        href="https://www.linkedin.com/in/guillermo-quintana-b60541205/"
+                        alt="linkedin"
+                        class="pl-4"
+                      >
+                        <i
+                          class="bx bxl-linkedin bx-tada-hover text-2xl text-white hover:text-yellow"
+                        ></i>
+                      </a>
+                      <a
+                        href="https://www.instagram.com/guilleq1093/"
+                        alt="instagram"
+                        class="pl-4"
+                      >
+                        <i
+                          class="bx bxl-instagram bx-tada-hover text-2xl text-white hover:text-yellow"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-20 bg-grey-50 pt-20" id="about">
+            <div
+              class="container flex flex-col items-center py-16 md:py-20 lg:flex-row"
+            >
+              <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
+                <h2
+                  class="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+                >
+                  ¿Quién soy?
+                </h2>
+
+                <h4
+                  class="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+                >
+                  Desarrollador | Analísta
+                </h4>
+
+                <p class="pt-6 font-body leading-relaxed text-grey-20">
+                  Soy un estudiante avanzado de Licenciatura en Sistemas
+                  Informáticos de la UNaM, como tal he adquirido una sólida base
+                  técnica y tengo una comprensión profunda de los conceptos
+                  clave de la informática. Soy un analista programador
+                  comprometido y estoy constantemente buscando oportunidades
+                  para desarrollar mis habilidades o adquirir nuevos
+                  conocimientos. Me destaco por mi capacidad para trabajar en
+                  equipo y mi habilidad para resolver problemas de manera
+                  efectiva. Estoy entusiasmado por la oportunidad de aplicar mis
+                  conocimientos y habilidades en una variedad de proyectos y
+                  desafíos. Poseo habilidades en el uso de diversas herramientas
+                  y tecnologías informáticas junto con una formación en
+                  ingeniería de software. He trabajado en proyectos utilizando
+                  lenguajes de programación como Java, C#, Go y JS. También
+                  tengo conocimientos en bases de datos y sistemas operativos.
+                  Siempre estoy dispuesto a explorar nuevas tecnologías y
+                  aplicaciones. Soy un buen comunicador y trabajador en equipo.
+                  Me siento cómodo trabajando en proyectos colaborativos y puedo
+                  adaptarme fácilmente a diferentes ambientes de trabajo. Estoy
+                  dispuesto a trabajar duro y a asumir responsabilidades para
+                  lograr el éxito del proyecto, por lo que estoy seguro de que
+                  puedo ser un valioso miembro de cualquier equipo de trabajo.
+                </p>
+                <div
+                  class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start"
+                >
+                  <div
+                    class="flex items-center justify-center sm:justify-start"
+                  >
+                    <p
+                      class="font-body text-lg font-semibold uppercase text-grey-20"
+                    >
+                      Conectemos 👀
+                    </p>
+                    <div class="hidden sm:block">
+                      <i class="bx bx-chevron-right text-2xl text-primary"></i>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0"
+                  >
+                    <a href="https://www.facebook.com/guille1093/">
+                      <i
+                        class="bx bxl-facebook-square bx-tada-hover text-2xl text-primary hover:text-black"
+                      ></i>
+                    </a>
+                    <a href="https://twitter.com/Guiller83846795" class="pl-4">
+                      <i
+                        class="bx bxl-twitter bx-tada-hover text-2xl text-primary hover:text-black"
+                      ></i>
+                    </a>
+                    <a href="https://github.com/guille1093" class="pl-4">
+                      <i
+                        class="bx bxl-github bx-tada-hover text-2xl text-primary hover:text-black"
+                      ></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/guillermo-quintana-b60541205/"
+                      class="pl-4"
+                    >
+                      <i
+                        class="bx bxl-linkedin bx-tada-hover text-2xl text-primary hover:text-black"
+                      ></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/guilleq1093/"
+                      class="pl-4"
+                    >
+                      <i
+                        class="bx bxl-instagram bx-tada-hover text-2xl text-primary hover:text-black"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-full pl-0 pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
+                <h2
+                  class="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+                >
+                  ¿IDIOMAS?
+                </h2>
+
+                <h4
+                  class="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+                >
+                  Puedo ser de ayuda.
+                </h4>
+
+                <div class="pt-3">
+                  <div class="flex items-end justify-between">
+                    <h4 class="font-body font-semibold uppercase text-black">
+                      Español: Nativo
+                    </h4>
+                  </div>
+                  <div class="mt-2 h-3 w-full rounded-full bg-lila">
+                    <div
+                      class="h-3 rounded-full bg-primary"
+                      style="width: 100%; height: 1px"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="pt-3">
+                  <div class="flex items-end justify-between">
+                    <h4 class="font-body font-semibold uppercase text-black">
+                      Inglés: Avanzado B1, B2, C1, C2 (Cambridge)
+                    </h4>
+                  </div>
+                  <div class="mt-2 h-3 w-full rounded-full bg-lila">
+                    <div
+                      class="h-3 rounded-full bg-primary"
+                      style="width: 100%; height: 1px"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="pt-3">
+                  <div class="flex items-end justify-between">
+                    <h4 class="font-body font-semibold uppercase text-black">
+                      Alemán: Básico A1 (Goethe)
+                    </h4>
+                  </div>
+                  <div class="mt-2 h-3 w-full rounded-full bg-lila">
+                    <div
+                      class="h-3 rounded-full bg-primary"
+                      style="width: 100%; height: 1px"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container py-16 md:py-20" id="services">
+            <h2
+              class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+            >
+              ¿Qué puedo ofrecer?
+            </h2>
+            <h3
+              class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+            >
+              Estas son algunas de las cosas que puedo hacer por ti
+            </h3>
+
+            <div
+              class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3"
+            >
+              <!------------------------------------------------------------------------------------------------>
+              <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                  <div class="hidden group-hover:block">
+                    <img
+                      src="/assets/img/icon-development-white.svg"
+                      alt="development icon"
+                    />
+                  </div>
+                  <div class="block group-hover:hidden">
+                    <img
+                      src="/assets/img/icon-development-black.svg"
+                      alt="development icon"
+                    />
+                  </div>
+                </div>
+                <div class="text-center">
+                  <h3
+                    class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+                  >
+                    DESARROLLO WEB
+                  </h3>
+                  <p
+                    class="text-grey pt-4 text-sm group-hover:text-white md:text-base"
+                  >
+                    Desarrollo y diseño web personalizado a tus necesidades.
+                  </p>
+                </div>
+              </div>
+              <!------------------------------------------------------------------------------------------------>
+              <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                  <div class="hidden group-hover:block">
+                    <img
+                      src="/assets/img/database-white.svg"
+                      alt="content marketing icon"
+                    />
+                  </div>
+                  <div class="block group-hover:hidden">
+                    <img
+                      src="/assets/img/database-dark.svg"
+                      alt="content marketing icon"
+                    />
+                  </div>
+                </div>
+                <div class="text-center">
+                  <h3
+                    class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+                  >
+                    Bases de datos
+                  </h3>
+                  <p
+                    class="text-grey pt-4 text-sm group-hover:text-white md:text-base"
+                  >
+                    Diseño y optimización de bases de datos para un rendimiento
+                    acorde.
+                  </p>
+                </div>
+              </div>
+              <!------------------------------------------------------------------------------------------------>
+              <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                  <div class="hidden group-hover:block">
+                    <img src="/assets/img/server-white.svg" alt="server icon" />
+                  </div>
+                  <div class="block group-hover:hidden">
+                    <img src="/assets/img/server-black.svg" alt="server icon" />
+                  </div>
+                </div>
+                <div class="text-center">
+                  <h3
+                    class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+                  >
+                    Desarrollo de backend
+                  </h3>
+                  <p
+                    class="text-grey pt-4 text-sm group-hover:text-white md:text-base"
+                  >
+                    Maneja tu lógica de negocios y servicios con un backend
+                    robusto y escalable.
+                  </p>
+                </div>
+              </div>
+              <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                  <div class="hidden group-hover:block">
+                    <img
+                      src="/assets/img/analyze-white.svg"
+                      alt="analizar icon"
+                    />
+                  </div>
+                  <div class="block group-hover:hidden">
+                    <img
+                      src="/assets/img/analyze-black.svg"
+                      alt="analizar icon"
+                    />
+                  </div>
+                </div>
+                <div class="text-center">
+                  <h3
+                    class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+                  >
+                    Analísis de requerimientos
+                  </h3>
+                  <p
+                    class="text-grey pt-4 text-sm group-hover:text-white md:text-base"
+                  >
+                    Plasmá tus ideas en un producto funcional.
+                  </p>
+                </div>
+              </div>
+              <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                  <div class="hidden group-hover:block">
+                    <img
+                      src="/assets/img/red-white.svg"
+                      alt="Theme Design icon"
+                    />
+                  </div>
+                  <div class="block group-hover:hidden">
+                    <img
+                      src="/assets/img/red-black.svg"
+                      alt="Theme Design icon"
+                    />
+                  </div>
+                </div>
+                <div class="text-center">
+                  <h3
+                    class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+                  >
+                    Redes
+                  </h3>
+                  <p
+                    class="text-grey pt-4 text-sm group-hover:text-white md:text-base"
+                  >
+                    Infraestructuras seguras y concisas.
+                  </p>
+                </div>
+              </div>
+              <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                  <div class="hidden group-hover:block">
+                    <img
+                      src="/assets/img/icon-graphics-white.svg"
+                      alt="Graphic Design icon"
+                    />
+                  </div>
+                  <div class="block group-hover:hidden">
+                    <img
+                      src="/assets/img/icon-graphics-black.svg"
+                      alt="Graphic Design icon"
+                    />
+                  </div>
+                </div>
+                <div class="text-center">
+                  <h3
+                    class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+                  >
+                    Aplicaciones de Escritorio
+                  </h3>
+                  <p
+                    class="text-grey pt-4 text-sm group-hover:text-white md:text-base"
+                  >
+                    Aplicaciones de escritorio eficientes y a medida.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container py-16 md:py-20" id="portfolio">
+            <h2
+              class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+            >
+              Tecnologías
+            </h2>
+            <h3
+              class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+            >
+              Aqui encontraras algunas de las tecnologías que utilizo en mis
+              proyectos.
+            </h3>
+
+            <div
+              class="mx-auto grid w-full grid-cols-2 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-6"
+            >
+              <a
+                href="/"
+                class="mx-auto transform transition-all hover:scale-110 md:mx-0"
+              >
+                <img
+                  src="/assets/img/logos/icons8-html-5.svg"
+                  class="tech rounded-lg shadow-lg shadow-primary"
+                  alt="portfolio image"
+                />
+                <h4
+                  class="pt-4 text-center font-header text-lg font-medium text-black sm:text-xl"
+                >
+                  HTML5
+                </h4>
+              </a>
+
+              <a
+                href="/"
+                class="mx-auto transform transition-all hover:scale-110 md:mx-0"
+              >
+                <img
+                  src="/assets/img/logos/icons8-css3.svg"
+                  class="tech rounded-lg shadow-lg shadow-primary"
+                  alt="portfolio image"
+                />
+                <h4
+                  class="pt-4 text-center font-header text-lg font-medium text-black sm:text-xl"
+                >
+                  CSS3 CON TAILWIND O BOOTSTRAP
+                </h4>
+              </a>
+
+              <a
+                href="/"
+                class="mx-auto transform transition-all hover:scale-110 md:mx-0"
+              >
+                <img
+                  src="/assets/img/logos/icons8-javascript.svg"
+                  class="tech rounded-lg shadow-lg shadow-primary"
+                  alt="Javascript icon"
+                />
+                <h4
+                  class="pt-4 text-center font-header text-lg font-medium text-black sm:text-xl"
+                >
+                  JAVASCRIPT & NODE
+                </h4>
+              </a>
+
+              <a
+                href="/"
+                class="mx-auto transform transition-all hover:scale-110 md:mx-0"
+              >
+                <img
+                  src="/assets/img/logos/icons8-java.svg"
+                  class="tech rounded-lg shadow-lg shadow-primary"
+                  alt="JAVA icon"
+                />
+                <h4
+                  class="pt-4 text-center font-header text-lg font-medium text-black sm:text-xl"
+                >
+                  JAVA & SPRING
+                </h4>
+              </a>
+
+              <a
+                href="/"
+                class="mx-auto transform transition-all hover:scale-110 md:mx-0"
+              >
+                <img
+                  src="/assets/img/logos/icons8-golang.svg"
+                  class="tech rounded-lg shadow-lg shadow-primary"
+                  alt="Golang icon"
+                />
+                <h4
+                  class="pt-4 text-center font-header text-lg font-medium text-black sm:text-xl"
+                >
+                  Go
+                </h4>
+              </a>
+
+              <a
+                href="/"
+                class="mx-auto transform transition-all hover:scale-110 md:mx-0"
+              >
+                <img
+                  src="/assets/img/logos/icons8-linux.svg"
+                  class="tech rounded-lg shadow-lg shadow-primary"
+                  alt="linux icon"
+                />
+                <h4
+                  class="pt-4 text-center font-header text-lg font-medium text-black sm:text-xl"
+                >
+                  Linux
+                </h4>
+              </a>
+
+              <a
+                href="/"
+                class="mx-auto transform transition-all hover:scale-110 md:mx-0"
+              >
+                <img
+                  src="/assets/img/logos/icons8-mysql-logo.svg"
+                  class="tech rounded-lg shadow-lg shadow-primary"
+                  alt="mysql icon"
+                />
+                <h4
+                  class="pt-4 text-center font-header text-lg font-medium text-black sm:text-xl"
+                >
+                  MySQL
+                </h4>
+              </a>
+
+              <a
+                href="/"
+                class="mx-auto transform transition-all hover:scale-110 md:mx-0"
+              >
+                <img
+                  src="/assets/img/logos/icons8-postgresql.svg"
+                  class="tech rounded-lg shadow-lg shadow-primary"
+                  alt="postgresql icon"
+                />
+                <h4
+                  class="pt-4 text-center font-header text-lg font-medium text-black sm:text-xl"
+                >
+                  PostgreSQL
+                </h4>
+              </a>
+
+              <a
+                href="/"
+                class="mx-auto transform transition-all hover:scale-110 md:mx-0"
+              >
+                <img
+                  src="/assets/img/logos/icons8-svelte.svg"
+                  class="tech rounded-lg shadow-lg shadow-primary"
+                  alt="svelte icon"
+                />
+                <h4
+                  class="pt-4 text-center font-header text-lg font-medium text-black sm:text-xl"
+                >
+                  Svelte & Sveltekit
+                </h4>
+              </a>
+
+              <a
+                href="/"
+                class="mx-auto transform rounded transition-all hover:scale-110 md:mx-0"
+              >
+                <img
+                  src="/assets/img/logos/icons8-github.svg"
+                  class="tech rounded-lg shadow-lg shadow-primary"
+                  alt="github icon"
+                />
+                <h4
+                  class="pt-4 text-center font-header text-lg font-medium text-black sm:text-xl"
+                >
+                  Git & Github
+                </h4>
+              </a>
+
+              <a
+                href="/"
+                class="mx-auto transform transition-all hover:scale-110 md:mx-0"
+              >
+                <img
+                  src="/assets/img/logos/icons8-docker.svg"
+                  class="tech rounded-lg shadow-lg shadow-primary"
+                  alt="docker icon"
+                />
+                <h4
+                  class="pt-4 text-center font-header text-lg font-medium text-black sm:text-xl"
+                >
+                  Docker
+                </h4>
+              </a>
+
+              <a
+                href="/"
+                class="mx-auto transform transition-all hover:scale-110 md:mx-0"
+              >
+                <img
+                  src="/assets/img/logos/icons8-c-sharp-logo.svg"
+                  class="tech rounded-lg shadow-lg shadow-primary"
+                  alt="C# icon"
+                />
+                <h4
+                  class="pt-4 text-center font-header text-lg font-medium text-black sm:text-xl"
+                >
+                  C# & .NET
+                </h4>
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-grey-50" id="proyects">
+            <div class="container py-16 md:py-20">
+              <div class="mx-auto w-full sm:w-3/4 lg:w-full">
+                <h2
+                  class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+                >
+                  Mis proyectos.
+                </h2>
+                <h3
+                  class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+                >
+                  Echa un vistazo a mis repositorios y proyectos accediendo a
+                  Github.
+                </h3>
+
+                <div
+                  class="flex flex-wrap items-center justify-center pt-4 sm:pt-4"
+                >
+                  <span class="m-8 block">
+                    <a href="https://github.com/guille1093">
+                      <img
+                        align="center"
+                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=guille1093&langs_count=15&layout=compact&bg_color=f4f3f8&locale=es&hide_border=true&title_color=5540af&icon_color=5540af"
+                        alt="github language stats"
+                      />
+                    </a>
+                  </span>
+                  <span class="m-8 block">
+                    <a href="https://github.com/guille1093">
+                      <img
+                        align="center"
+                        src="https://github-readme-stats.vercel.app/api?username=guille1093&show_icons=true&count_private=true&&bg_color=f4f3f8&locale=es&hide_border=true&title_color=5540af&icon_color=5540af"
+                        alt="github stats"
+                      />
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container py-16 md:py-20" id="contact">
+            <h2
+              class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+            >
+              Contacto
+            </h2>
+            <h4
+              class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+            >
+              ¿Tiene preguntas?
+            </h4>
+            <div class="mx-auto w-full pt-5 text-center sm:w-2/3 lg:pt-6">
+              <p class="font-body text-grey-10">
+                Puede contactarme por cualquiera de mis redes sociales o por los
+                siguientes medios.
+              </p>
+            </div>
+
+            <div class="flex flex-col pt-16 lg:flex-row">
+              <div
+                class="w-full border-l-2 border-t-2 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3"
+              >
+                <div class="flex items-center">
+                  <i class="bx bx-phone text-2xl text-grey-40"></i>
+                  <p
+                    class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg"
+                  >
+                    Telefóno
+                  </p>
+                </div>
+                <p
+                  class="pt-2 text-left font-body font-bold text-primary lg:text-lg"
+                >
+                  (+54) 3751 418982
+                </p>
+              </div>
+              <div
+                class="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2"
+              >
+                <div class="flex items-center">
+                  <i class="bx bx-envelope text-2xl text-grey-40"></i>
+                  <p
+                    class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg"
+                  >
+                    Correo
+                  </p>
+                </div>
+                <p
+                  class="pt-2 text-left font-body font-bold text-primary lg:text-lg"
+                >
+                  guille121093@gmail.com
+                </p>
+              </div>
+              <div
+                class="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2"
+              >
+                <div class="flex items-center">
+                  <i class="bx bx-map text-2xl text-grey-40"></i>
+                  <p
+                    class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg"
+                  >
+                    Ubicación
+                  </p>
+                </div>
+                <p
+                  class="pt-2 text-left font-body font-bold text-primary lg:text-lg"
+                >
+                  Actualmente residiendo en Argentina 🇦🇷.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="relative bg-primary bg-cover bg-center bg-no-repeat py-16 bg-blend-multiply lg:py-24"
+            style="background-image: url(/assets/img/bg-cta.jpg)"
+          >
+            <div class="container relative z-30" id="cv">
+              <h3
+                class="text-center font-header text-3xl uppercase leading-tight tracking-wide text-white sm:text-4xl lg:text-5xl"
+              >
+                Puede <span class="font-bold">descargar</span> <br />
+                mi CV en PDF aquí.
+              </h3>
+              <div class="mt-6 flex flex-col justify-center sm:flex-row">
+                <button
+                  class="mt-2 rounded bg-primary px-8 py-3 font-body text-base font-bold uppercase text-white transition-colors hover:bg-primary hover:text-yellow focus:border-transparent focus:outline-none focus:ring focus:ring-yellow sm:ml-2 sm:mt-0 sm:py-4 md:text-lg"
+                  aria-label="Descargar CV"
+                >
+                  Descargar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-primary">
+          <div class="container flex flex-col justify-between py-6 sm:flex-row">
+            <p class="text-center font-body text-white md:text-left">
+              © Copyright 2023. Todos los derechos reservados. Hecho con ❤️ por
+              <a
+                href="https://www.linkedin.com/in/guillermo-quintana-b60541205/"
+                class="text-yellow"
+                >Guillermo Quintana</a
+              >
+            </p>
+            <div
+              class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0"
+            >
+              <a href="https://www.facebook.com/guille1093/">
+                <i
+                  class="bx bxl-facebook-square text-2xl text-white hover:text-yellow"
+                ></i>
+              </a>
+              <a href="https://twitter.com/Guiller83846795" class="pl-4">
+                <i
+                  class="bx bxl-twitter text-2xl text-white hover:text-yellow"
+                ></i>
+              </a>
+              <a href="https://github.com/guille1093" class="pl-4">
+                <i
+                  class="bx bxl-github text-2xl text-white hover:text-yellow"
+                ></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/guillermo-quintana-b60541205/"
+                class="pl-4"
+              >
+                <i
+                  class="bx bxl-linkedin text-2xl text-white hover:text-yellow"
+                ></i>
+              </a>
+              <a href="https://www.instagram/guille1093" class="pl-4">
+                <i
+                  class="bx bxl-instagram text-2xl text-white hover:text-yellow"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="/assets/js/main.js"></script>
+    </div>
+  </body>
+</html>

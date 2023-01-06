@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+
+html {
+  @apply font-body antialiased;
+}
+
+@tailwind utilities;
+
+.tech {
+  width: 175px;
+  height: 175px;
+}
+
+#background-video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: fill;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  filter: brightness(0.4);
+  overflow: hidden;
+}
